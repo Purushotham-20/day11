@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box-Sizing Demo</title>
+  <style>
+    .box {
+      border: 1px solid black;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .box:first-child {
+      width: 300px;
+      box-sizing: content-box;
+      background-color: #f0e68c;
+    }
+
+    .box:nth-child(2) {
+      width: 300px;
+      box-sizing: border-box;
+      background-color: #add8e6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">Box 1 - content-box</div>
+  <div class="box">Box 2 - border-box</div>
+
+</body>
+</html>
