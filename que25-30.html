@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Background Size Demo</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    /* Full-page Hero Section */
+    .hero {
+      height: 100vh;
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+      background-size: cover; /* Fill the screen */
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      padding: 20px;
+    }
+
+    /* Fixed-size Box with Contained Image */
+    .box {
+      width: 300px;
+      height: 200px;
+      margin: 40px auto;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/SVG_logo.svg/300px-SVG_logo.svg.png');
+      background-size: contain; /* Fit the whole image in the box */
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 2px solid #333;
+      background-color: #f0f0f0;
+    }
+
+    .label {
+      text-align: center;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Explore the Outdoors</h1>
+  </div>
+
+  <!-- Box with Contained Image -->
+  <div class="box"></div>
+  <div class="label">Image with <code>background-size: contain</code></div>
+
+</body>
+</html>
